@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
-  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-
-  <title>Portfolio | NEXTEP MEDIA GROUP</title>
-
-  <!-- SEO + Open Graph -->
-  <meta name="description" content="NEXTEP portfolio: Motion Graphics, 3D, branding, and high-quality audiovisual production.">
-  <meta property="og:title" content="Portfolio — NEXTEP Media Group">
-  <meta property="og:image" content="https://nextep.media/assets/images/logo-white.svg">
-  <meta property="og:type" content="website">
-  <meta http-equiv="Content-Language" content="en">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-  </style>
+    <meta charset="utf-8" />
+    <style>
+        .lang { display: none !important; }
+        html[data-lang="en"] .lang.en { display: inline-block !important; }
+        html[data-lang="es"] .lang.es { display: inline-block !important; }
+    </style>
+    <script>
+        (function() {
+            var l = localStorage.getItem('appLang') || 'en';
+            document.documentElement.setAttribute('data-lang', l);
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <title>Portfolio | NEXTEP MEDIA GROUP</title>
+    <meta name="description" content="NEXTEP portfolio: Motion Graphics, 3D, branding, and high-quality audiovisual production.">
+    <meta property="og:title" content="Portfolio — NEXTEP Media Group">
+    <meta property="og:image" content="https://nextep.media/assets/images/logo-white.svg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
-<body>
+	
+	<body>
   <header class="site-header">
     <div class="logo">
       <a href="index.html"><img src="assets/images/logo-white.svg" alt="NEXTEP MEDIA Logo" /></a>

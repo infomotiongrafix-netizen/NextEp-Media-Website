@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
-  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-  <title>NEXTEP MEDIA | Contact</title>
-
-	<meta name="description" content="Contact NEXTEP MEDIA for audiovisual production, motion graphics, and creative design services.">
+    <meta charset="UTF-8" />
+    <style>
+        .lang { display: none !important; }
+        html[data-lang="en"] .lang.en { display: inline-block !important; }
+        html[data-lang="es"] .lang.es { display: inline-block !important; }
+    </style>
+    <script>
+        (function() {
+            var l = localStorage.getItem('appLang') || 'en';
+            document.documentElement.setAttribute('data-lang', l);
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <title>NEXTEP MEDIA | Contact</title>
+    <meta name="description" content="Contact NEXTEP MEDIA for audiovisual production, motion graphics, and creative design services.">
     <meta property="og:title" content="Contact | NEXTEP MEDIA">
     <meta property="og:description" content="Get in touch with NEXTEP MEDIA to start your motion graphics or video project.">
     <meta property="og:image" content="https://nextep.media/assets/images/logo-white.svg">
@@ -21,6 +31,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
 </head>
+	
 <body>
 
 	<header class="site-header">

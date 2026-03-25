@@ -2,13 +2,9 @@ const langBtn = document.getElementById("lang-toggle");
 let currentLang = localStorage.getItem('appLang') || "en";
 
 function updateLanguage() {
-  document.body.classList.toggle('lang-es', currentLang === 'es');
+  document.documentElement.setAttribute('data-lang', currentLang);
   if (langBtn) langBtn.textContent = currentLang.toUpperCase();
   localStorage.setItem('appLang', currentLang);
-
-  document.querySelectorAll(".lang").forEach(el => {
-    el.style.display = el.classList.contains(currentLang) ? "" : "none";
-  });
 
   document.querySelectorAll('input[data-en], textarea[data-en]').forEach(el => {
     const langAttr = 'data-' + currentLang;

@@ -2,11 +2,7 @@
 /* =======================
     RESET + BASE
 ======================= */
-.lang.es { display: none !important; }
-.lang.en { display: inline-block !important; }
 
-body.lang-es .lang.es { display: inline-block !important; }
-body.lang-es .lang.en { display: none !important; }
 
 * {
     margin: 0;
@@ -23,20 +19,6 @@ body {
     overflow-y: scroll;
 }
 
-.lang.es {
-    display: none !important;
-}
-
-.lang.en {
-    display: inline-block !important;
-}
-
-body.lang-es .lang.es {
-    display: inline-block !important;
-}
-body.lang-es .lang.en {
-    display: none !important;
-}
 
 a {
     text-decoration: none;

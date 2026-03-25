@@ -1,67 +1,52 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-	
-	<script>
-		if (localStorage.getItem('preferredLanguage') === 'es') {
-			document.documentElement.classList.add('lang-es');
-		}
-	</script>
-	<style>
-		.lang.es { display: none; }
-		.lang.en { display: inline-block; }
-		html.lang-es .lang.es { display: inline-block !important; }
-		html.lang-es .lang.en { display: none !important; }
-	</style>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8" />
+    <style>
+        .lang { display: none !important; }
+        html[data-lang="en"] .lang.en { display: inline-block !important; }
+        html[data-lang="es"] .lang.es { display: inline-block !important; }
+        body { margin: 0; background: #191919; font-family: 'Poppins', sans-serif; color: #fff; }
+        .site-header { display: flex; justify-content: space-between; align-items: center; padding: 2rem; background: rgba(25, 25, 25, 0.95); position: fixed; top: 0; width: 100%; z-index: 1000; box-sizing: border-box; height: 120px; }
+        .hero-slider { position: relative; height: 100vh; width: 100%; overflow: hidden; background: #000; }
+        .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; display: flex; justify-content: center; align-items: center; }
+        .slide.active { opacity: 1; visibility: visible; }
+        .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+        @media (max-width: 768px) {
+            .site-header { height: 70px; padding: 1rem; }
+            .hero-slider { margin-top: 70px; height: auto !important; aspect-ratio: 16/9; }
+        }
+    </style>
+    <script>
+        (function() {
+            var l = localStorage.getItem('appLang') || 'en';
+            document.documentElement.setAttribute('data-lang', l);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
-    
     <title>NEXTEP | Visual Content & Creative Partner for Brand Positioning</title>
     <meta name="description" content="Nextep is a creative studio focused on high-impact audiovisual systems, motion graphics, and brand activation for real-world environments.">
     <link rel="canonical" href="https://nextep.media/" />
     <meta name="robots" content="index, follow">
-
     <meta property="og:title" content="NEXTEP | Visual Content & Creative Partner for Brand Positioning">
     <meta property="og:description" content="We design visual systems that generate real impact in digital and physical spaces.">
     <meta property="og:image" content="https://nextep.media/assets/images/og-image.jpg">
     <meta property="og:url" content="https://nextep.media/">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NEXTEP MEDIA | Motion Graphics & Audiovisual Strategy">
-    <meta name="twitter:description" content="We design visual systems that generate real impact in digital and physical spaces.">
-    <meta name="twitter:image" content="https://nextep.media/assets/images/og-image.jpg">
-	
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "NEXTEP MEDIA",
-      "alternateName": "Nextep Media Group",
       "url": "https://nextep.media/",
-      "logo": "https://nextep.media/assets/images/logo-white.svg",
-      "description": "Creative studio focused on high-impact audiovisual systems and motion graphics.",
-      "sameAs": [
-        "https://www.instagram.com/nextep.media/",
-        "https://www.linkedin.com/company/nextep-media/"
-      ]
+      "logo": "https://nextep.media/assets/images/logo-white.svg"
     }
     </script>
-
-    <script>
-      (function() {
-        const savedLang = localStorage.getItem('appLang') || 'en';
-        document.documentElement.setAttribute('data-lang', savedLang);
-        const style = document.createElement('style');
-        style.innerHTML = `.lang { display: none !important; } .lang.${savedLang} { display: inline-block !important; }`;
-        document.head.appendChild(style);
-      })();
-    </script>
-
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-	
 </head>
 
 <body>
