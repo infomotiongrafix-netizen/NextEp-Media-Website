@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    
+    <title>Approach | NEXTEP MEDIA</title>
+
+    <script>
+      (function() {
+        const savedLang = localStorage.getItem('appLang') || 'en';
+        document.documentElement.setAttribute('data-lang', savedLang);
+        const style = document.createElement('style');
+        style.innerHTML = `.lang { display: none !important; } .lang.${savedLang} { display: inline-block !important; } body { visibility: hidden; }`;
+        document.head.appendChild(style);
+        window.addEventListener('DOMContentLoaded', () => { document.body.style.visibility = 'visible'; });
+      })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+	<header class="site-header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo-white.svg" alt="NEXTEP MEDIA Logo" /></a>
+        </div>
+        <nav class="navbar" id="main-navigation">
+            <ul>
+                <li><a href="index.html#home"><span class="lang en">Home</span><span class="lang es">Inicio</span></a></li>
+                <li><a href="index.html#about"><span class="lang en">About</span><span class="lang es">Acerca de</span></a></li>
+                <li><a href="index.html#services"><span class="lang en">Services</span><span class="lang es">Servicios</span></a></li>
+                <li><a href="portfolio.html"><span class="lang en">Portfolio</span><span class="lang es">Portafolio</span></a></li>
+     		    <li class="active"><a href="plans.html"><span class="lang en">Approach</span><span class="lang es">Enfoque</span></a></li>
+                <li><a href="contact.html"><span class="lang en">Contact</span><span class="lang es">Contacto</span></a></li>
+            </ul>
+        </nav>
+        <button id="lang-toggle" class="lang-btn">EN</button>
+        <button id="menu-toggle" class="menu-btn">☰</button>
+    </header>
+
+    <main class="plans-page section">
+
+		<header class="approach-intro-wrapper">
+            <h1 class="section-title">
+                <span class="lang en">Approach</span>
+                <span class="lang es">Enfoque</span>
+            </h1>
+            <p class="approach-subtext">
+                <span class="lang en">We don’t follow fixed plans. We adapt to how brands actually need to operate across physical and digital spaces.</span>
+                <span class="lang es">No seguimos planes fijos. Nos adaptamos a cómo las marcas realmente necesitan operar en espacios físicos y digitales.</span>
+            </p>
+            <div class="positioning-claim">
+                <span class="lang en">Built to adapt. Designed to perform.</span>
+                <span class="lang es">Creado para adaptar. Diseñado para rendir.</span>
+            </div>
+        </header>
+
+        <div class="approach-grid">
+            
+            <div class="approach-card-new">
+                <div class="card-num-bg">01</div>
+                <h3><span class="lang en">Projects</span><span class="lang es">Proyectos</span></h3>
+                <p>
+                    <span class="lang en">For brands that need something specific. A launch video, a visual piece, or a focused project with a clear objective.</span>
+                    <span class="lang es">Para marcas que necesitan algo específico: un video de lanzamiento, una pieza visual o un proyecto puntual con un objetivo claro.</span>
+                </p>
+                <a href="contact.html" class="btn neon-btn">
+                    <span class="lang en">Discuss a Project</span><span class="lang es">Hablar de un Proyecto</span>
+                </a>
+            </div>
+
+            <div class="approach-card-new featured-neon">
+                <div class="card-num-bg">02</div>
+                <div class="approach-badge"><span class="lang en">Most Strategic</span><span class="lang es">Más Estratégico</span></div>
+                <h3><span class="lang en">Ongoing Content</span><span class="lang es">Contenido constante</span></h3>
+                <p>
+                    <span class="lang en">For brands that need continuous visual content, from social media to screens in physical spaces with consistency and long-term direction.</span>
+                    <span class="lang es">Para marcas que necesitan contenido visual constante: desde redes sociales hasta pantallas en espacios físicos, con consistencia y dirección a largo plazo.</span>
+                </p>
+                <a href="contact.html" class="btn neon-btn">
+                    <span class="lang en">Build a System</span><span class="lang es">Crear un Sistema</span>
+                </a>
+            </div>
+
+            <div class="approach-card-new">
+                <div class="card-num-bg">03</div>
+                <h3><span class="lang en">Creative Partner</span><span class="lang es">Socio Creativo</span></h3>
+                <p>
+                    <span class="lang en">We collaborate with agencies and creative teams as a production and visual partner, handling execution and creative direction when needed.</span>
+                    <span class="lang es">Colaboramos con agencias y equipos creativos como partner de producción y dirección visual, encargándonos de la ejecución cuando lo necesiten.</span>
+                </p>
+                <a href="contact.html" class="btn neon-btn">
+                    <span class="lang en">Partner with Us</span><span class="lang es">Sé nuestro Socio</span>
+                </a>
+            </div>
+        </div>
+
+
+		<section class="how-work-section">
+			<div class="how-work-container">
+				<h2 class="neon-text-green">
+					<span class="lang en">How we work</span>
+					<span class="lang es">Cómo trabajamos</span>
+				</h2>
+
+				<div class="how-work-content">
+					<h3 class="how-work-highlight">
+						<span class="lang en">We keep things simple.</span>
+						<span class="lang es">Mantenemos las cosas simples.</span>
+					</h3>
+					<p class="how-work-desc">
+						<span class="lang en">We understand your space, define a direction, and build content that actually works in real environments.</span>
+						<span class="lang es">Entendemos tu espacio, definimos una dirección y creamos contenido que realmente funciona en entornos reales.</span>
+					</p>
+				</div>
+			</div>
+		</section>
+		
+        <div class="approach-cta">
+            <a href="contact.html" class="btn neon-btn btn-large">
+                <span class="lang en">Let’s build something</span>
+                <span class="lang es">Construyamos algo</span>
+            </a>
+        </div>
+    </main>
+
+<!-- FOOTER (EXTRACTO COMPLETO DEL INDEX) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Columna: Información de marca -->
+            <div class="footer-col brand-info">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/logo-white.svg" alt="NEXTEP Logo" class="footer-logo-img">
+                </a>
+                <p> <span class="lang en">Creative energy, professional results.&nbsp;</span></p>
+               <p><span class="lang en">Your Next Step in Creative Media. </span> 
+				   <span class="lang es">Energía creativa, resultados profesionales.&nbsp;</span></p>
+                <p><span class="lang es">&nbsp;Tu próximo paso en la producción creativa. </span></p>
+                <a href="mailto:info@nextep.media" class="footer-link">info@nextep.media</a>
+            </div>
+            <!-- Columna: Navegación -->
+            <div class="footer-col navigation">
+                <h3>
+                    <span class="lang en">Links</span>
+                    <span class="lang es">Enlaces</span>
+                </h3>
+                <ul>
+                    <li><a href="index.html#about" class="footer-link">
+                        <span class="lang en">About</span>
+                        <span class="lang es">Nosotros</span>
+                    </a></li>
+                    <li><a href="index.html#services" class="footer-link">Services</a></li>
+                    <li><a href="portfolio.html" class="footer-link">
+                        <span class="lang en">Portfolio</span>
+                        <span class="lang es">Portafolio</span>
+                    </a></li>
+                    <li><a href="plans.html" class="footer-link">
+                        <span class="lang en">Approach</span>
+                        <span class="lang es">Enfoque</span>
+                    </a></li>
+					<li><a href="contact.html" class="footer-link">
+                        <span class="lang en">Contact</span>
+                        <span class="lang es">Contacto</span>
+                    </a></li>
+                </ul>
+            </div>
+            <!-- Columna: Redes sociales -->
+            <div class="footer-col social-links">
+                <blockquote>
+                    <h3> <span class="lang en" style="display: center;">Connect</span> <span class="lang es" style="display: none;">Conecta</span> </h3>
+                </blockquote>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nextep.media" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nextepmedia" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@nextepmediagroup" target="_blank" class="social-icon" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://vimeo.com/nextepmedia" target="_blank" class="social-icon" aria-label="Vimeo">
+                        <i class="fa-brands fa-vimeo-v"></i>
+                    </a>
+                    <a href="https://wa.me/message/ZNYF6TU5XM2BC1" target="_blank" class="social-icon" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 NEXTEP Media Group. 
+                <span class="lang en">All rights reserved.</span>
+                <span class="lang es">Todos los derechos reservados.</span>
+            </p>
+        </div>
+    </footer>
+ 
+    <a href="https://wa.me/message/ZNYF6TU5XM2BC1" class="whatsapp-float" target="_blank">
+       <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>

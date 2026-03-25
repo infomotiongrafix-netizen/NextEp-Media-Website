@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <title>NEXTEP MEDIA | Contact</title>
+
+	<meta name="description" content="Contact NEXTEP MEDIA for audiovisual production, motion graphics, and creative design services.">
+    <meta property="og:title" content="Contact | NEXTEP MEDIA">
+    <meta property="og:description" content="Get in touch with NEXTEP MEDIA to start your motion graphics or video project.">
+    <meta property="og:image" content="https://nextep.media/assets/images/logo-white.svg">
+    <meta property="og:url" content="https://nextep.media/contact.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact | NEXTEP MEDIA">
+    <meta name="twitter:description" content="Get in touch with NEXTEP MEDIA to start your motion graphics or video project.">
+    <meta name="twitter:image" content="https://nextep.media/assets/images/logo-white.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+	<header class="site-header">
+    <div class="logo">
+      <a href="index.html"><img src="assets/images/logo-white.svg" alt="NEXTEP MEDIA Logo" /></a>
+    </div>
+    <nav class="navbar" id="main-navigation">
+      <ul>
+        <li><a href="index.html#home"><span class="lang en">Home</span><span class="lang es">Inicio</span></a></li>
+        <li><a href="index.html#about"><span class="lang en">About</span><span class="lang es">Acerca de</span></a></li>
+        <li><a href="index.html#services"><span class="lang en">Services</span><span class="lang es">Servicios</span></a></li>
+        <li><a href="portfolio.html"><span class="lang en">Portfolio</span><span class="lang es">Portafolio</span></a></li>
+        <li><a href="plans.html"><span class="lang en">Approach</span><span class="lang es">Enfoque</span></a></li>
+        <li class="active"><a href="contact.html"><span class="lang en">Contact</span><span class="lang es">Contacto</span></a></li>
+      </ul>
+    </nav>
+    <button id="lang-toggle" class="lang-btn">EN</button>
+    <button id="menu-toggle" class="menu-btn">☰</button>
+  </header>
+
+
+	<div id="form-feedback" aria-live="polite"></div>
+
+
+	<section class="contact section">
+    <h2>
+      <span class="lang en">Let’s Talk</span>
+      <span class="lang es">Hablemos</span>
+    </h2>
+    <p class="lang en">This isn’t about making more content.</p>
+    <p class="lang en">It’s about helping your brand stand out, position itself, and perform across screens, digital spaces, and real environments.</p>
+    
+    <p class="lang es">Esto no se trata de hacer más contenido.</p>
+    <p class="lang es">Se trata de ayudar a tu marca a destacar, posicionarse y funcionar en pantallas, espacios digitales y entornos reales.</p>
+		
+	<div id="form-feedback" aria-live="polite"></div>
+
+		<form class="contact-form" action="sendmail.php" method="POST" novalidate autocomplete="off">
+      <input type="hidden" name="lang" id="form-lang" value="">
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="" data-en="Name" data-es="Nombre" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="" data-en="Email" data-es="Correo Electrónico" required autocomplete="email" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="" data-en="Phone" data-es="Teléfono" autocomplete="tel" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="country" placeholder="" data-en="Country" data-es="País" autocomplete="country" />
+        </div>
+      </div>
+      <div class="form-group">
+        <select name="subject" required>
+          <option value="" disabled selected data-en="Select the reason for your inquiry" data-es="Selecciona el motivo de tu consulta"></option>
+          <option value="project" data-en="New Project" data-es="Nuevo Proyecto"></option>
+          <option value="collaboration" data-en="Collaboration" data-es="Colaboración"></option>
+          <option value="support" data-en="Support" data-es="Soporte"></option>
+          <option value="other" data-en="Other" data-es="Otro"></option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="" data-en="Message / Details" data-es="Mensaje / Detalles" required></textarea>
+      </div>
+      <button type="submit" class="btn neon-btn">
+        <span class="lang en">Send</span>
+        <span class="lang es">Enviar</span>
+      </button>
+    </form>
+  </section>
+
+
+	<footer class="main-footer">
+        <div class="footer-container">
+            <!-- Columna: Información de marca -->
+            <div class="footer-col brand-info">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/logo-white.svg" alt="NEXTEP Logo" class="footer-logo-img">
+                </a>
+                <p> <span class="lang en">Creative energy, professional results.&nbsp;</span></p>
+               <p><span class="lang en">Your Next Step in Creative Media. </span> 
+				   <span class="lang es">Energía creativa, resultados profesionales.&nbsp;</span></p>
+                <p><span class="lang es">&nbsp;Tu próximo paso en la producción creativa. </span></p>
+                <a href="mailto:info@nextep.media" class="footer-link">info@nextep.media</a>
+            </div>
+            <!-- Columna: Navegación -->
+            <div class="footer-col navigation">
+                <h3>
+                    <span class="lang en">Links</span>
+                    <span class="lang es">Enlaces</span>
+                </h3>
+                <ul>
+                    <li><a href="index.html#about" class="footer-link">
+                        <span class="lang en">About</span>
+                        <span class="lang es">Nosotros</span>
+                    </a></li>
+                    <li><a href="index.html#services" class="footer-link">Services</a></li>
+                    <li><a href="portfolio.html" class="footer-link">
+                        <span class="lang en">Portfolio</span>
+                        <span class="lang es">Portafolio</span>
+                    </a></li>
+                    <li><a href="plans.html" class="footer-link">
+                        <span class="lang en">Approach</span>
+                        <span class="lang es">Enfoque</span>
+                    </a></li>
+					<li><a href="contact.html" class="footer-link">
+                        <span class="lang en">Contact</span>
+                        <span class="lang es">Contacto</span>
+                    </a></li>
+                </ul>
+            </div>
+            <!-- Columna: Redes sociales -->
+            <div class="footer-col social-links">
+                <blockquote>
+                    <h3> <span class="lang en" style="display: center;">Connect</span> <span class="lang es" style="display: none;">Conecta</span> </h3>
+                </blockquote>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nextep.media" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nextepmedia" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@nextepmediagroup" target="_blank" class="social-icon" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://vimeo.com/nextepmedia" target="_blank" class="social-icon" aria-label="Vimeo">
+                        <i class="fa-brands fa-vimeo-v"></i>
+                    </a>
+                    <a href="https://wa.me/message/ZNYF6TU5XM2BC1" target="_blank" class="social-icon" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 NEXTEP Media Group. 
+                <span class="lang en">All rights reserved.</span>
+                <span class="lang es">Todos los derechos reservados.</span>
+            </p>
+        </div>
+    </footer>
+ 
+<a href="https://wa.me/message/ZNYF6TU5XM2BC1" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="WhatsApp Chat">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+  <script>
+    // Feedback de status tras envío (PHP)
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      const status = params.get('status');
+      const lang = params.get('lang') || localStorage.getItem('appLang') || "en";
+      if (status) {
+        const msg = {
+          success: {
+            en: "Message sent successfully!",
+            es: "¡Mensaje enviado correctamente!"
+          },
+          error: {
+            en: "Error sending message. Please try again.",
+            es: "Error al enviar el mensaje. Intenta nuevamente."
+          },
+          incomplete: {
+            en: "Please complete all required fields.",
+            es: "Por favor completa todos los campos obligatorios."
+          }
+        };
+        const feedback = document.getElementById('form-feedback');
+        if (feedback && msg[status]) {
+          feedback.innerHTML = "<div class='form-feedback" + (status !== "success" ? " error" : "") + "'>" + msg[status][lang] + "</div>";
+        }
+      }
+
+      // Mantener idioma formulario
+      var formLang = document.getElementById('form-lang');
+      if (formLang) {
+        formLang.value = localStorage.getItem('appLang') || 'en';
+      }
+      var langBtn = document.getElementById("lang-toggle");
+      if (langBtn) {
+        langBtn.addEventListener("click", function () {
+          setTimeout(function () {
+            if (formLang) formLang.value = localStorage.getItem('appLang') || 'en';
+          }, 80);
+        });
+      }
+
+      // Validación personalizada multi-idioma (frontend)
+      const form = document.querySelector('.contact-form');
+      const messages = {
+        name: { en: "Please enter your name.", es: "Por favor ingresa tu nombre." },
+        email: { en: "Please enter a valid email.", es: "Por favor ingresa un correo válido." },
+        subject: { en: "Please select a subject.", es: "Por favor selecciona un motivo." },
+        message: { en: "Please enter your message.", es: "Por favor ingresa tu mensaje." }
+      };
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          let valid = true;
+          let errorMsg = "";
+          let lang = localStorage.getItem('appLang') || 'en';
+          if (!form.name.value.trim()) {
+            valid = false; errorMsg = messages.name[lang];
+          } else if (!form.email.value.trim() || !form.email.value.includes('@')) {
+            valid = false; errorMsg = messages.email[lang];
+          } else if (!form.subject.value) {
+            valid = false; errorMsg = messages.subject[lang];
+          } else if (!form.message.value.trim()) {
+            valid = false; errorMsg = messages.message[lang];
+          }
+          if (!valid) {
+            e.preventDefault();
+            document.getElementById('form-feedback').innerHTML =
+              `<div class="form-feedback error">${errorMsg}</div>`;
+            return false;
+          }
+        });
+      }
+    });
+
+</body>
+</html>

@@ -1,0 +1,727 @@
+<head>
+	
+		<meta charset="utf-8" />
+	
+	
+	<script>
+		if (localStorage.getItem('preferredLanguage') === 'es') {
+			document.documentElement.classList.add('lang-es');
+		}
+	</script>
+	<style>
+		.lang.es { display: none; }
+		.lang.en { display: inline-block; }
+		html.lang-es .lang.es { display: inline-block !important; }
+		html.lang-es .lang.en { display: none !important; }
+	</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+    
+    <title>NEXTEP | Visual Content & Creative Partner for Brand Positioning</title>
+    <meta name="description" content="Nextep is a creative studio focused on high-impact audiovisual systems, motion graphics, and brand activation for real-world environments.">
+    <link rel="canonical" href="https://nextep.media/" />
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="NEXTEP | Visual Content & Creative Partner for Brand Positioning">
+    <meta property="og:description" content="We design visual systems that generate real impact in digital and physical spaces.">
+    <meta property="og:image" content="https://nextep.media/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://nextep.media/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NEXTEP MEDIA | Motion Graphics & Audiovisual Strategy">
+    <meta name="twitter:description" content="We design visual systems that generate real impact in digital and physical spaces.">
+    <meta name="twitter:image" content="https://nextep.media/assets/images/og-image.jpg">
+	
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NEXTEP MEDIA",
+      "alternateName": "Nextep Media Group",
+      "url": "https://nextep.media/",
+      "logo": "https://nextep.media/assets/images/logo-white.svg",
+      "description": "Creative studio focused on high-impact audiovisual systems and motion graphics.",
+      "sameAs": [
+        "https://www.instagram.com/nextep.media/",
+        "https://www.linkedin.com/company/nextep-media/"
+      ]
+    }
+    </script>
+
+    <script>
+      (function() {
+        const savedLang = localStorage.getItem('appLang') || 'en';
+        document.documentElement.setAttribute('data-lang', savedLang);
+        const style = document.createElement('style');
+        style.innerHTML = `.lang { display: none !important; } .lang.${savedLang} { display: inline-block !important; }`;
+        document.head.appendChild(style);
+      })();
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+	
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+          <img src="assets/images/logo-white.svg" alt="NEXTEP MEDIA Logo" width="180" height="54">
+        </div>
+        <nav class="navbar" id="main-navigation">
+            <ul>
+                <li class="active"><a href="index.html#home"><span class="lang en">Home</span><span class="lang es">Inicio</span></a></li>
+                <li><a href="index.html#about"><span class="lang en">About</span><span class="lang es">Acerca de</span></a></li>
+                <li><a href="index.html#services"><span class="lang en">Services</span><span class="lang es">Servicios</span></a></li>
+                <li><a href="portfolio.html"><span class="lang en">Portfolio</span><span class="lang es">Portafolio</span></a></li>
+     		   <li><a href="plans.html"><span class="lang en">Approach</span><span class="lang es">Enfoque</span></a></li>
+                <li><a href="contact.html"><span class="lang en">Contact</span><span class="lang es">Contacto</span></a></li>
+            </ul>
+        </nav>
+        <button id="lang-toggle" class="lang-btn">EN</button>
+        <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation">☰</button>
+  		<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  		  <i class="fa-solid fa-arrow-up"></i>
+		</button>
+	</header>
+
+	
+<!-- SECCIÓN HERO SLIDER -->
+<section id="home" class="hero-slider">
+    
+    <!-- Slide 1 -->
+<div class="slide active">
+    <video autoplay muted loop playsinline poster="assets/images/hero_poster_1.jpg" class="hero-video" fetchpriority="high">
+        <source src="assets/videos/hero_video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+        <h1>
+            <span class="lang en">We Create. We Move. We Inspire.</span>
+            <span class="lang es">Creamos. Movemos. Inspiramos.</span>
+        </h1>
+        <p class="hero-tagline">
+            <span class="lang en">Powerful visual stories that move brands forward.</span>
+            <span class="lang es">Historias visuales poderosas que impulsan marcas.</span>
+        </p>
+        <a href="portfolio.html" class="btn neon-btn">
+            <span class="lang en">See Our Work</span>
+            <span class="lang es">Ver Nuestro Trabajo</span>
+        </a>
+    </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide">
+        <img src="assets/images/hero_slide/hero_slide1.webp" 
+             alt="NEXTEP MEDIA - Motion Graphics and High-End Animation Showcase" 
+             class="hero-video" 
+             width="1920" 
+             height="1080" 
+             fetchpriority="high">
+        
+        <div class="hero-content hide-content">
+            <h1>
+                <span class="lang en">Motion Graphics Experts</span>
+                <span class="lang es">Expertos en Motion Graphics</span>
+            </h1>
+            <p class="hero-tagline">
+                <span class="lang en">High-end animation for your next big step.</span>
+                <span class="lang es">Animación de alto nivel para tu próximo gran paso.</span>
+            </p>
+            <a href="plans.html" class="btn neon-btn">
+                <span class="lang en">View Approach</span>
+                <span class="lang es">Ver Enfoque</span>
+            </a>
+        </div>
+    </div>	
+    <!-- Slide 3 -->
+<div class="slide">
+        <video autoplay muted loop playsinline poster="assets/images/hero_poster_3.jpg" class="hero-video">
+            <source src="assets/videos/hero_video.mp4" type="video/mp4" />
+        </video>
+          <div class="hero-content hide-content">
+            <h1>
+                <span class="lang en">Creative Energy. Professional Results.</span>
+                <span class="lang es">Energía Creativa. Resultados Profesionales.</span>
+            </h1>
+            <p class="hero-tagline">
+                <span class="lang en">Your next step in creative media production.</span>
+                <span class="lang es">Tu próximo paso en la producción creativa.</span>
+            </p>
+            <a href="contact.html" class="btn neon-btn">
+                <span class="lang en">Contact Us</span>
+                <span class="lang es">Contáctanos</span>
+            </a>
+        </div>
+    </div>
+    <button class="slider-arrow prev" aria-label="Previous slide">❮</button>
+    <button class="slider-arrow next" aria-label="Next slide">❯</button>
+
+</section>
+	
+  <section id="about" class="about section">
+    <h2>
+        <span class="lang en">About Us</span>
+        <span class="lang es">Acerca de</span>
+    </h2>
+    
+    <div class="about-container">
+
+		<h3 class="about-intro">
+			<span class="lang en">Nextep is a creative studio focused on audiovisual systems and brand activation.</span>
+			<span class="lang es">Nextep es un estudio creativo enfocado en sistemas audiovisuales y activación de marca.</span>
+		</h3>
+
+		<div class="lang en">
+            <p>We develop high-impact visual content <strong>built for real-world environments</strong> — from in-store screens and commercial spaces to digital campaigns, social media, and advertising productions.</p>
+            <p>We combine motion, design, and communication so brands don’t just look good, but perform consistently across all touchpoints.</p>
+            <p>We are part of an ecosystem of independent studios focused on brand development, collaborating with specialized partners like <span class="partner-link">Etcétera Estudio</span> and <span class="partner-link">Arkhé</span>, enabling brands to operate consistently across visual, digital, and physical environments.</p>
+            <p>Within this system, our role is to translate brand positioning into clear, dynamic, and scalable audiovisual execution.</p>
+            <p>We also work as creative partners for agencies and startups, providing visual direction and high-level execution across different types of projects.</p>
+            <p>We don’t produce isolated pieces. <span class="highlight-green">We design visual systems that generate real impact.</span></p>
+        </div>
+
+        <div class="lang es">
+            <p>Desarrollamos contenido visual de alto impacto <strong>creado para entornos reales</strong>: desde pantallas en tiendas y espacios comerciales, hasta campañas digitales, redes sociales y producciones publicitarias.</p>
+            <p>Combinamos motion, diseño y comunicación para que las marcas no solo se vean bien, sino que funcionen de forma consistente en todos sus puntos de contacto.</p>
+            <p>Formamos parte de un ecosistema de estudios independientes enfocados en el desarrollo de marca, donde colaboramos con partners especializados como <span class="partner-link">Etcétera Estudio</span> y <span class="partner-link">Arkhé</span>, permitiendo que las marcas operen de forma coherente en entornos visuales, digitales y físicos.</p>
+            <p>Dentro de este sistema, nuestro rol es traducir el posicionamiento de marca en ejecución audiovisual clara, dinámica y escalable.</p>
+            <p>También trabajamos como partners creativos para agencias y startups, aportando dirección visual y ejecución de alto nivel en distintos tipos de proyectos.</p>
+            <p>No producimos piezas aisladas. <span class="highlight-green">Diseñamos sistemas visuales que generan impacto real.</span></p>
+        </div>
+    </div>
+</section>
+
+    <section id="services" class="services section hidden">
+        <h2>
+            <span class="lang en">Our Creative Services</span>
+            <span class="lang es">Nuestros Servicios Creativos</span>
+        </h2>
+        <div class="service-grid">
+
+			
+			<div class="service-card hidden">
+                <div class="icon-image">
+                    <img src="assets/images/icon_postprod.webp" alt="Video Editing & Postproduction" width="400" height="400" loading="lazy">
+                </div>
+                <div class="service-text">
+                    <h3>
+                        <span class="lang en">Retail & DOOH Content Systems </span>
+                        <span class="lang es">Sistemas de Contenido para Retail </span>
+                    </h3>
+                    <p>
+                        <span class="lang en">Content designed for high traffic environments and in store screens, focused on capturing attention and enhancing the in store experience to drive real engagement and conversion. </span>
+                        <span class="lang es">Contenido diseñado para entornos de alto tránsito y pantallas en punto de venta, enfocado en captar atención y potenciar la experiencia dentro del local para generar mayor interacción y conversión. </span>
+                    </p>
+                </div>
+            </div>
+
+			
+			<div class="service-card hidden">
+                <div class="icon-image">
+                    <img src="assets/images/icon_motion.webp" alt="Motion Graphics & Animation" width="400" height="400" loading="lazy">
+                </div>
+                <div class="service-text">
+                    <h3>
+                        <span class="lang en">Digital Campaigns & Social Content</span>
+                        <span class="lang es">Contenido para Campañas y Redes</span>
+                    </h3>
+                    <p>
+                        <span class="lang en">Content development for digital campaigns and social media, aligned with brand communication goals to create consistency, visibility and performance across platforms.</span>
+                        <span class="lang es">Desarrollo de contenido para campañas digitales y redes sociales, alineado a los objetivos de comunicación de la marca para lograr consistencia, visibilidad y rendimiento en distintas plataformas.</span>
+                    </p>
+                </div>
+            </div>
+
+			
+			<div class="service-card hidden">
+                <div class="icon-image">
+                    <img src="assets/images/icon_CreativeBrand.webp" alt="Creative Branding Support" width="400" height="400" loading="lazy">
+                </div>
+                <div class="service-text">
+                    <h3>
+                        <span class="lang en">Brand Activation & Visual Systems</span>
+                        <span class="lang es">Sistemas Visuales de Marca</span>
+                    </h3>
+                  <p> <span class="lang en">Creation of visual systems that connect different brand touchpoints, ensuring consistency, impact and scalability across physical and digital environments.</span></p>
+                    
+					   <span class="lang es">Creación de sistemas visuales que conectan los distintos puntos de contacto de la marca, asegurando coherencia, impacto y escalabilidad en entornos físicos y digitales.</span> </p>
+                </div>
+            </div>
+
+		
+			<div class="service-card hidden">
+                <div class="icon-image">
+                    <img src="assets/images/icon_graphicdesign.webp" alt="Graphic Design" width="400" height="400" loading="lazy">
+                </div>
+                <div class="service-text">
+                    <h3>
+                      <span class="lang en">Creative Direction & Production </span>
+                        <span class="lang es"> Dirección Creativa y Producción</span>
+                    </h3>
+                    <p>
+                        <span class="lang en">Creative direction and audiovisual production for brands, agencies and startups looking to elevate their visual quality and develop strong, cohesive content.</span>
+                        <span class="lang es">Dirección creativa y producción audiovisual para marcas, agencias y startups que buscan elevar su calidad visual y desarrollar contenido sólido y coherente.</span>
+                    </p>
+                </div>
+            </div>
+
+		
+			<div class="service-card hidden">
+                <div class="icon-image">
+                    <img src="assets/images/icon_creativedirection.webp" alt="Creative Direction" width="400" height="400" loading="lazy">
+                </div>
+                <div class="service-text">
+                    <h3>
+                        <span class="lang en">Creative Partner for Agencies</span>
+                        <span class="lang es">Partner Creativo para Agencias</span>
+                    </h3>
+                    <p>
+                        <span class="lang en">Creative partnership for agencies that need a reliable team to execute, elevate and scale audiovisual content while maintaining high visual standards.</span>
+                        <span class="lang es">Partner creativo para agencias que necesitan un equipo confiable para ejecutar, potenciar y escalar contenido audiovisual manteniendo un alto nivel visual.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+<section id="benefits" class="benefits section">
+    <div class="benefits-container">
+        <h2 class="lang en">Why Nextep?</h2>
+        <h2 class="lang es">¿Por qué Nextep?</h2>
+
+        <div class="benefits-grid">
+
+			<div class="benefit-item">
+                <span class="benefit-number">01</span>
+                <div class="benefit-content">
+                    <h3 class="lang en">Visual Systems</h3>
+                    <h3 class="lang es">Sistemas Visuales</h3>
+                    <p class="lang en">We translate brand positioning into scalable visual systems that ensure consistency across all touchpoints.</p>
+                    <p class="lang es">Traducimos el posicionamiento de marca en sistemas visuales escalables que aseguran coherencia en cada punto de contacto.</p>
+                </div>
+            </div>
+
+
+			<div class="benefit-item">
+                <span class="benefit-number">02</span>
+                <div class="benefit-content">
+                    <h3 class="lang en">Strategic Ecosystem</h3>
+                    <h3 class="lang es">Ecosistema Estratégico</h3>
+                    <p class="lang en">Direct collaboration with branding and architecture partners for a 360° physical and digital execution.</p>
+                    <p class="lang es">Colaboración directa con partners de branding y arquitectura para una ejecución 360° física y digital.</p>
+                </div>
+            </div>
+
+
+			<div class="benefit-item">
+                <span class="benefit-number">03</span>
+                <div class="benefit-content">
+                    <h3 class="lang en">Real-World Impact</h3>
+                    <h3 class="lang es">Impacto Real</h3>
+                    <p class="lang en">Content specifically built for retail, DOOH, and high-traffic commercial environments.</p>
+                    <p class="lang es">Contenido creado específicamente para retail, DOOH y entornos comerciales de alto tráfico.</p>
+                </div>
+            </div>
+
+
+			<div class="benefit-item">
+                <span class="benefit-number">04</span>
+                <div class="benefit-content">
+                    <h3 class="lang en">Digital Platforms</h3>
+                    <h3 class="lang es">Plataformas Digitales</h3>
+                    <p class="lang en">High-performance content optimized for social media and digital campaigns with a focus on engagement.</p>
+                    <p class="lang es">Contenido de alto rendimiento optimizado para redes sociales y campañas digitales con enfoque en engagement.</p>
+                </div>
+            </div>
+
+
+			<div class="benefit-item">
+                <span class="benefit-number">05</span>
+                <div class="benefit-content">
+                    <h3 class="lang en">Creative Agility</h3>
+                    <h3 class="lang es">Agilidad Creativa</h3>
+                    <p class="lang en">High-end production quality with the speed and flexibility that modern brands demand.</p>
+                    <p class="lang es">Calidad de producción de alto nivel con la velocidad y flexibilidad que las marcas modernas exigen.</p>
+                </div>
+            </div>
+
+
+			<div class="benefit-item">
+                <span class="benefit-number">06</span>
+                <div class="benefit-content">
+                    <h3 class="lang en">White Label Partner</h3>
+                    <h3 class="lang es">Partner White Label</h3>
+                    <p class="lang en">Cost reduction and fast delivery for agencies, acting as a high-level creative production arm.</p>
+                    <p class="lang es">Reducción de costos y entregas rápidas para agencias, actuando como un brazo de producción creativa de alto nivel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="portfolio" class="portfolio section hidden">
+        <h2>
+            <span class="lang en">Our Portfolio</span>
+            <span class="lang es">Nuestro Portafolio</span>
+        </h2>
+        <p class="portfolio-intro">
+            <span class="lang en">
+                Explore our work. Every project represents a story told through visuals, emotion, and purpose. From creative campaigns to brand stories — each piece reflects our commitment to excellence and detail.
+            </span>
+            <span class="lang es">
+                Explora nuestro trabajo. Cada proyecto representa una historia contada a través de la imagen, la emoción y el propósito. Desde campañas creativas hasta historias de marca, cada pieza refleja nuestro compromiso con la excelencia y el detalle.
+            </span>
+        </p>
+<div class="portfolio-grid">
+    <div class="portfolio-item" data-video="1126002189">
+        <div class="thumb-wrapper">
+            <img src="https://vumbnail.com/1126002189.jpg" alt="Visual Storytelling" class="portfolio-thumb" loading="lazy" width="640" height="360">
+            <div class="play-button-overlay"><i class="fa-solid fa-play"></i></div>
+        </div>
+        <h4>
+            <span class="lang en">Built for visual storytelling</span>
+            <span class="lang es">Creado para la narrativa visual</span>
+        </h4>
+    </div>
+
+    <div class="portfolio-item" data-video="1125994212">
+        <div class="thumb-wrapper">
+            <img src="https://vumbnail.com/1125994212.jpg" alt="Visual Impact" class="portfolio-thumb" loading="lazy" width="640" height="360">
+            <div class="play-button-overlay"><i class="fa-solid fa-play"></i></div>
+        </div>
+        <h4>
+            <span class="lang en">Designed for visual impact</span>
+            <span class="lang es">Diseñado para el impacto visual</span>
+        </h4>
+    </div>
+
+    <div class="portfolio-item" data-video="1126007137">
+        <div class="thumb-wrapper">
+            <img src="https://vumbnail.com/1126007137.jpg" alt="Visual Systems" class="portfolio-thumb" loading="lazy" width="640" height="360">
+            <div class="play-button-overlay"><i class="fa-solid fa-play"></i></div>
+        </div>
+        <h4>
+            <span class="lang en">Exploring visual systems</span>
+            <span class="lang es">Explorando sistemas visuales</span>
+        </h4>
+    </div>
+
+    <div class="portfolio-item" data-video="1125991760">
+        <div class="thumb-wrapper">
+            <img src="https://vumbnail.com/1125991760.jpg" alt="Real Environments" class="portfolio-thumb" loading="lazy" width="640" height="360">
+            <div class="play-button-overlay"><i class="fa-solid fa-play"></i></div>
+        </div>
+        <h4>
+            <span class="lang en">Crafted for real environments</span>
+            <span class="lang es">Creado para entornos reales</span>
+        </h4>
+    </div>
+</div>		</div> 
+		<a href="portfolio.html" class="btn neon-btn">
+            <span class="lang en">View More</span>
+            <span class="lang es">Ver Más</span>
+        </a>
+	    </section>
+
+	<!-- PARTNERS -->
+	<section id="partners" class="partners section">
+    <h2>
+        <span class="lang en">Strategic Partners</span>
+        <span class="lang es">Aliados Estratégicos</span>
+    </h2>
+    
+    <div class="partners-grid">
+
+		<a href="https://etceteraestudio.com/" target="_blank" class="partner-card">
+            <div class="partner-logo">
+
+				<img src="assets/icons/partners/etcetera.svg" alt="Etcétera Estudio" width="400" height="267" loading="lazy">
+            </div>
+            <div class="partner-info">
+                <p class="lang en">Strategy & Branding</p>
+                <p class="lang es">Estrategia y Branding</p>
+            </div>
+        </a>
+
+
+		
+        <a href="https://arkheestudio.com/" target="_blank" class="partner-card">
+            <div class="partner-logo">
+                <img src="assets/icons/partners/arkhe.svg" alt="Arkhé" width="400" height="267" loading="lazy">
+            </div>
+            <div class="partner-info">
+                <p class="lang en">Architecture & Spatial Design</p>
+                <p class="lang es">Arquitectura y Diseño Espacial</p>
+            </div>
+        </a>
+
+
+        <a href="https://somospospo.com/" target="_blank" class="partner-card">
+            <div class="partner-logo">
+                <img src="assets/icons/partners/pospo.svg" alt="Pospo" width="400" height="267" loading="lazy">
+            </div>
+            <div class="partner-info">
+                <p class="lang en">Post-production Services</p>
+                <p class="lang es">Servicios de Posproducción</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- SECCIÓN: HOW WE COLLABORATE -->
+<section id="collaboration" class="collaboration section">
+    <div class="collab-header">
+        <h2>
+            <span class="lang en">Approach</span>
+            <span class="lang es">Enfoque</span>
+        </h2>
+        <p class="collab-subtitle">
+            <span class="lang en">Flexible engagement models tailored to different needs, from standalone projects to long term partnerships.</span>
+            <span class="lang es">Modelos de trabajo flexibles adaptados a distintas necesidades, desde proyectos puntuales hasta alianzas a largo plazo.</span>
+        </p>
+    </div>
+
+    <div class="collab-grid">
+        <!-- 01. Projects -->
+        <div class="collab-card">
+            <div class="collab-content">
+                <h3>
+                    <span class="lang en">Projects</span>
+                    <span class="lang es">Proyectos</span>
+                </h3>
+                <p>
+                    <span class="lang en">Defined scope, clear timelines and focused execution for specific needs.</span>
+                    <span class="lang es">Alcance definido, cronogramas claros y ejecución enfocada en necesidades específicas.</span>
+                </p>
+            </div>
+        </div>
+
+
+		<div class="collab-card featured">
+            <div class="collab-content">
+                <div class="collab-tag">
+                    <span class="lang en">Most Strategic</span>
+                    <span class="lang es">Más Estratégico</span>
+                </div>
+                <h3>
+                    <span class="lang en">Ongoing Content</span>
+                    <span class="lang es">Contenido Constante </span>
+                </h3>
+                <p>
+                    <span class="lang en">Continuous creative and content systems designed to scale and stay consistent over time.</span>
+                    <span class="lang es">Sistemas creativos y de contenido continuos, diseñados para escalar y mantener la consistencia en el tiempo.</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- 03. Agencies -->
+        <div class="collab-card">
+            <div class="collab-content">
+                <h3>
+                    <span class="lang en">Creative Partner</span>
+                    <span class="lang es">Socio Creativo</span>
+                </h3>
+                <p>
+                    <span class="lang en">Seamless integration with agency teams, providing execution and visual direction at scale.</span>
+                    <span class="lang es">Integración fluida con equipos de agencias, aportando ejecución y dirección visual a escala.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="collab-cta">
+        <a href="contact.html" class="btn neon-btn">
+            <span class="lang en">Start a project</span>
+            <span class="lang es">Iniciar un proyecto</span>
+        </a>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq section">
+    <div class="faq-container-main">
+        <h2 class="faq-main-title">
+            <span class="lang en">What you might be wondering</span>
+            <span class="lang es">Lo que podrías estar preguntándote</span>
+        </h2>
+
+        <div class="faq-board">
+
+			<div class="faq-questions">
+                <button class="faq-btn active" data-target="q1">
+                    <span class="lang en">What kind of projects do you work on?</span>
+                    <span class="lang es">¿Qué tipo de proyectos realizan?</span>
+                </button>
+                <button class="faq-btn" data-target="q2">
+                    <span class="lang en">What kind of clients do you work with?</span>
+                    <span class="lang es">¿Con qué tipo de clientes trabajan?</span>
+                </button>
+                <button class="faq-btn" data-target="q3">
+                    <span class="lang en">What makes you different?</span>
+                    <span class="lang es">¿Qué los diferencia?</span>
+                </button>
+                <button class="faq-btn" data-target="q4">
+                    <span class="lang en">Do you work with agencies?</span>
+                    <span class="lang es">¿Trabajan con agencias?</span>
+                </button>
+                <button class="faq-btn" data-target="q5">
+                    <span class="lang en">How can we start?</span>
+                    <span class="lang es">¿Cómo podemos empezar?</span>
+                </button>
+            </div>
+
+
+			<div class="faq-display">
+                <div class="faq-answer-label">
+                    <span class="lang en">Answer</span>
+                    <span class="lang es">Respuesta</span>
+                </div>
+                
+                <div id="q1" class="faq-answer-text active">
+                    <p class="lang en">We develop audiovisual content and visual systems designed to perform across physical and digital environments, from in store screens to campaigns and social content.</p>
+                    <p class="lang es">Desarrollamos contenido audiovisual y sistemas visuales diseñados para funcionar en entornos físicos y digitales, desde pantallas en punto de venta hasta campañas y contenido para redes.</p>
+                </div>
+                <div id="q2" class="faq-answer-text">
+                    <p class="lang en">We work with restaurants, retail brands, shopping centers, real estate projects and agencies looking to elevate their visual presence and content.</p>
+                    <p class="lang es">Trabajamos con restaurantes, marcas en retail, centros comerciales, proyectos inmobiliarios y agencias que buscan mejorar su presencia visual y contenido.</p>
+                </div>
+                <div id="q3" class="faq-answer-text">
+                    <p class="lang en">We don’t produce isolated content. We design visual systems built to capture attention, stay consistent and perform in real environments.</p>
+                    <p class="lang es">No producimos piezas aisladas. Diseñamos sistemas visuales pensados para captar atención, mantener coherencia y funcionar en entornos reales.</p>
+                </div>
+                <div id="q4" class="faq-answer-text">
+                    <p class="lang en">Yes, we collaborate as creative partners, integrating with existing teams to provide visual direction and execution.</p>
+                    <p class="lang es">Sí, colaboramos como partners creativos, integrándonos a equipos existentes para aportar dirección visual y ejecución.</p>
+                </div>
+                <div id="q5" class="faq-answer-text">
+                    <p class="lang en">You can reach out through the website, and from there we define the best approach based on your goals and needs.</p>
+                    <p class="lang es">Podés contactarnos a través del sitio y, a partir de ahí, definimos el enfoque más adecuado según tus objetivos y necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section id="cta-final" class="cta-final section">
+    <div class="cta-container">
+        <div class="cta-box">
+            <div class="cta-content">
+                <span class="cta-tag lang en">Ready to move?</span>
+                <span class="cta-tag lang es">¿Listo para avanzar?</span>
+                
+                <h2 class="cta-title">
+                    <span class="lang en">Let’s build your <br><span class="text-gradient">Next Step</span> together.</span>
+                    <span class="lang es">Construyamos juntos tu <br><span class="text-gradient">Próximo Paso</span>.</span>
+                </h2>
+                
+                <p class="cta-desc">
+                    <span class="lang en">From concept to high-impact execution. We are ready when you are.</span>
+                    <span class="lang es">Desde el concepto hasta la ejecución de alto impacto. Estamos listos cuando tú lo estés.</span>
+                </p>
+
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn neon-btn btn-large">
+                        <span class="lang en">Start a Conversation</span>
+                        <span class="lang es">Iniciar una Conversación</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+			<div class="footer-col brand-info">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/logo-white.svg" alt="NEXTEP Logo" class="footer-logo-img" width="180" height="54">
+                </a>
+                <p> <span class="lang en">Creative energy, professional results.&nbsp;</span></p>
+               <p><span class="lang en">Your Next Step in Creative Media. </span> 
+				   <span class="lang es">Energía creativa, resultados profesionales.&nbsp;</span></p>
+                <p><span class="lang es">&nbsp;Tu próximo paso en la producción creativa. </span></p>
+                <a href="mailto:info@nextep.media" class="footer-link">info@nextep.media</a>
+            </div>
+
+			<div class="footer-col navigation">
+                <h3>
+                    <span class="lang en">Links</span>
+                    <span class="lang es">Enlaces</span>
+                </h3>
+                <ul>
+                    <li><a href="index.html#about" class="footer-link">
+                        <span class="lang en">About</span>
+                        <span class="lang es">Nosotros</span>
+                    </a></li>
+                    <li><a href="index.html#services" class="footer-link">Services</a></li>
+                    <li><a href="portfolio.html" class="footer-link">
+                        <span class="lang en">Portfolio</span>
+                        <span class="lang es">Portafolio</span>
+                    </a></li>
+                    <li><a href="plans.html" class="footer-link">
+                        <span class="lang en">Approach</span>
+                        <span class="lang es">Enfoque</span>
+                    </a></li>
+					<li><a href="contact.html" class="footer-link">
+                        <span class="lang en">Contact</span>
+                        <span class="lang es">Contacto</span>
+                    </a></li>
+                </ul>
+            </div>
+
+			<div class="footer-col social-links">
+                <blockquote>
+                    <h3> <span class="lang en" style="display: center;">Connect</span> <span class="lang es" style="display: none;">Conecta</span> </h3>
+                </blockquote>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nextep.media" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nextepmedia" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@nextepmediagroup" target="_blank" class="social-icon" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://vimeo.com/nextepmedia" target="_blank" class="social-icon" aria-label="Vimeo">
+                        <i class="fa-brands fa-vimeo-v"></i>
+                    </a>
+                    <a href="https://wa.me/message/ZNYF6TU5XM2BC1" target="_blank" class="social-icon" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 NEXTEP Media Group. 
+                <span class="lang en">All rights reserved.</span>
+                <span class="lang es">Todos los derechos reservados.</span>
+            </p>
+        </div>
+    </footer>
+    <div id="video-modal" class="video-modal" aria-hidden="true">
+        <div class="modal-content">
+            <iframe id="modal-iframe" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <button id="close-modal" class="close-modal" aria-label="Cerrar reproductor">
+                &times;
+            </button>
+        </div>
+    </div>
+	
+<a href="https://wa.me/message/ZNYF6TU5XM2BC1" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="WhatsApp Chat">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	
+</body>
+</html>
